@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    a:focus{
+
+    }
+    #view{
+      width: 300px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .nav-pills{
+      width:150px;
+    }
+    .nav-pills.affix{
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand" style=" padding:5px"><img src="img/2degrees-logo.png" height=40px alt="2degrees logo"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top:0">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="info.html"><span class="glyphicon glyphicon-list"></span> Info</a></li>
+        <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> Example</a></li>
+        <li class="active"><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+    <hgroup>
+      <h1>About</h1>
+      <h4>Our progress...</h4>
+    </hgroup>
+  </div>
+</div>
+
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div class="list-group">
+          <a class="list-group-item" href="#1">1.about us</a>
+          <a class="list-group-item" href="#2">2.jion us</a>
+          <a class="list-group-item" href="#3">3.contact us</a>
+        </div>
+      </div>
+      <div class="col-md-9 about">
+        <a name="1"></a>
+        <h3>2degrees</h3>
+        <p>2degrees is a telecommunications provider that operates in New Zealand. Its mobile network launched on 4 August 2009 after nine years of planning. 2degrees offers prepaid and pay-monthly monthly mobile services as well as fixed-line phone and broadband services. </p>
+        <p>2degrees is a telecommunications provider that operates in New Zealand. Its mobile network launched on 4 August 2009 after nine years of planning. 2degrees offers prepaid and pay-monthly monthly mobile services as well as fixed-line phone and broadband services. </p>
+        <p>2degrees is a telecommunications provider that operates in New Zealand. Its mobile network launched on 4 August 2009 after nine years of planning. 2degrees offers prepaid and pay-monthly monthly mobile services as well as fixed-line phone and broadband services. </p>
+
+        <a name="2"></a>
+        <h3>join us</h3>
+        <p>hen you join as a Business customer, your Business Sales Consultant will walk you through the process for keeping your numbers and set a date for when to transfer them across. </p>
+        <p>hen you join as a Business customer, your Business Sales Consultant will walk you through the process for keeping your numbers and set a date for when to transfer them across. </p>
+        <p>hen you join as a Business customer, your Business Sales Consultant will walk you through the process for keeping your numbers and set a date for when to transfer them across. </p>
+
+        <a name="3"></a>
+        <h3>contact us</h3>
+        <p>From your 2degrees Mobile 200</p>
+        <P>From within NZ 0800 022 022</P>
+        <p>From overseas +64 22 200 2000</p>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<footer id="footer">
+  <div class="container">
+    <p>© Two Degrees Mobile Limited 2018. All rights reserved. Site terms of use | Privacy policy | Terms and conditions </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(function(){
+  $('#myCarousel').carousel({
+    interval: 2000,
+  })
+});
+
+
+</script>
+
+
+</body>
+</html>

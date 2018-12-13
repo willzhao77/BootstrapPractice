@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    a:focus{
+
+    }
+    #view{
+      width: 300px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .nav-pills{
+      width:150px;
+    }
+    .nav-pills.affix{
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand" style=" padding:5px"><img src="img/2degrees-logo.png" height=40px alt="2degrees logo"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top:0">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Info</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-fire"></span> Example</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" >
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active" style="background:#19325b">
+      <img src="img/slide1.jpg" alt="frist PIC">
+    </div>
+    <div class="item"  style="background:#195b21">
+      <img src="img/slide2.jpg" alt="second PIC">
+    </div>
+    <div class="item" style="background:#1f5282">
+      <img src="img/slide3.jpg" alt="third PIC">
+    </div>
+  </div>
+  <a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+  <a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  $(function(){
+
+    $('#myCarousel').carousel({
+      interval: 2000,
+    });
+    //set in the centre
+    $('.carousel-control').css('line-height', ($('.carousel-inner img').height()) + 'px');
+    $(window).resize(function(){
+      var $height=$('.carousel-inner img').eq(0).height() ||
+                  $('.carousel-inner img').eq(1).height() ||
+                  $('.carousel-inner img').eq(2).height();
+      $('.carousel-control').css('line-height', $height + 'px');
+    });
+  });
+</script>
+
+
+</body>
+</html>

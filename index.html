@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    a:focus{
+
+    }
+    #view{
+      width: 300px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .nav-pills{
+      width:150px;
+    }
+    .nav-pills.affix{
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="index.html" class="navbar-brand" style=" padding:5px"><img src="img/2degrees-logo.png" height=40px alt="2degrees logo"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top:0">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="info.html"><span class="glyphicon glyphicon-list"></span> Info</a></li>
+        <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> Example</a></li>
+        <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" >
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active" style="background:#19325b">
+      <img src="img/slide1.jpg" alt="frist PIC">
+    </div>
+    <div class="item"  style="background:#195b21">
+      <img src="img/slide2.jpg" alt="second PIC">
+    </div>
+    <div class="item" style="background:#1f5282">
+      <img src="img/slide3.jpg" alt="third PIC">
+    </div>
+  </div>
+  <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+    <span class="glyphicon glyphicon-chevron-left">
+  </a>
+  <a href="#myCarousel" data-slide="next" class="carousel-control right">
+    <span class="glyphicon glyphicon-chevron-right">
+  </a>
+</div>
+
+
+<div class="tab1">
+  <div class="container">
+    <h2 class="tab-h2">Why Use 2degrees</h2>
+    <p class="tab-p">Tex Edwards founded 2degrees in February 2001 and provided initial capital</p>
+    <div>
+      <div class="col-md-6 col">
+        <div class="media">
+          <div class="media-left">
+            <a href="#"><img src="img/tab1-1.png" class="media-object" height="80" alt=""></a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Fast Growing</h4>
+            <p class="text-muted">Other Company: slow growing, connection issue</p>
+            <p>2degrees: Fast grouping company. Stable network </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col">
+        <div class="media">
+          <div class="media-left">
+            <a href="#"><img src="img/broadband.jpg" class="media-object" height="80" alt=""></a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Broadband</h4>
+            <p class="text-muted">Other Company: Price higher, connection slow</p>
+            <p>2degrees: Fast cheaper price, fast connection </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col">
+        <div class="media">
+          <div class="media-left">
+            <a href="#"><img src="img/2degrees-logo.png" class="media-object" height="80" alt=""></a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Group Account</h4>
+            <p class="text-muted">Other Company: change for all calls</p>
+            <p>2degrees: Free Calling Groups with your nearest and dearest   </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col">
+        <div class="media">
+          <div class="media-left">
+            <a href="#"><img src="img/helpdesk.png" class="media-object" height="80" alt=""></a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Help & Support</h4>
+            <p class="text-muted">Other Company: slow support</p>
+            <p>2degrees: Online or call center support </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 tab2-img">
+        <img src="img/datahunt.jpg" class=" auto img-responsive center-block" alt="">
+      </div>
+      <div class="text col-md-6 col-sm-6 tab2-text">
+        <h3>2degrees Data Hunt</h3>
+        <p>2DEGREES DATA HUNT 2degrees Data Hunt</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6" >
+        <img src="img/datalock.png" class="auto img-responsive center-block" alt="">
+      </div>
+      <div class="text col-md-6 col-sm-6">
+        <h3>2degrees Data Lock</h3>
+        <p>Get connected while on the go with our Mobile</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer id="footer">
+  <div class="container">
+    <p>© Two Degrees Mobile Limited 2018. All rights reserved. Site terms of use | Privacy policy | Terms and conditions </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(function(){
+  $('#myCarousel').carousel({
+    interval: 2000,
+  })
+});
+
+
+
+  //   //set in the centre
+  //   $('.carousel-control').css('line-height', ($('.carousel-inner img').height()) + 'px');
+  //   $(window).resize(function(){
+  //     var $height=$('.carousel-inner img').eq(0).height() ||
+  //                 $('.carousel-inner img').eq(1).height() ||
+  //                 $('.carousel-inner img').eq(2).height();
+  //     $('.carousel-control').css('line-height', $height + 'px');
+  //   });
+  // });
+
+//set text in the center
+
+$('.text').eq(0).css('margin-top' ,($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px')
+$('.text').eq(1).css('margin-top' ,($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px')
+</script>
+
+
+</body>
+</html>

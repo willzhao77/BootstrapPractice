@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    a:focus{
+
+    }
+    #view{
+      width: 300px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .nav-pills{
+      width:150px;
+    }
+    .nav-pills.affix{
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand" style=" padding:5px"><img src="img/2degrees-logo.png" height=40px alt="2degrees logo"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right" style="margin-top:0">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a href="info.html"><span class="glyphicon glyphicon-list"></span> Info</a></li>
+        <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> Example</a></li>
+        <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+    <hgroup>
+      <h1>Infomation</h1>
+      <h4>The latest info and ...</h4>
+    </hgroup>
+  </div>
+</div>
+
+
+<div id="infomation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <div class="row info-content">
+            <div class="col-md-5 col-xs-5">
+              <img src="img/info1.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7">
+              <h4>2degrees Business</h4>
+              <p class="hidden-xs">2degrees Business. Personal · Business · Enterprise · Help & Support. Welcome toYour 2degrees ... Log in to 2degrees Broadband. Enter your login details</p>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+          <div class="row info-content">
+            <div class="col-md-5 col-xs-5">
+              <img src="img/info2.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7">
+              <h4>2degrees Broadband2degrees Broadband2degrees Broadband</h4>
+              <p class="hidden-xs">Score a sweet $200 joining credit with our 12 month unlimited data broadband plan. Limited time only. Make the switch now.</p>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+          <div class="row info-content">
+            <div class="col-md-5 col-xs-5">
+              <img src="img/info3.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7">
+              <h4>2degrees Better</h4>
+              <p class="hidden-xs">To ensure all New Zealanders have access to better value mobile products and services, we have built our own national mobile network which not only provides</p>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="col-md-4 info-right hidden-xs hidden-sm">
+        <blockquote>
+          <h2>Hot Topic</h2>
+        </blockquote>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-xs-5" style="margin:12px 0;padding:0">
+              <img src="img/info2.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7" style="padding-right:0">
+              <h4>2degrees Broadband</h4>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-xs-5" style="margin:12px 0;padding:0">
+              <img src="img/info1.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7" style="padding-right:0">
+              <h4>2degrees Business</h4>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-xs-5" style="margin:12px 0;padding:0">
+              <img src="img/info3.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 col-xs-7" style="padding-right:0">
+              <h4>2degrees Better</h4>
+              <p>admin 16 / 08 / 2018</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<footer id="footer">
+  <div class="container">
+    <p>© Two Degrees Mobile Limited 2018. All rights reserved. Site terms of use | Privacy policy | Terms and conditions </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(function(){
+  $('#myCarousel').carousel({
+    interval: 2000,
+  })
+});
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    .a{
+      height:50px;
+      border:1px solid #ccc;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body style="margin:100px">
+
+<div class="modal fade" id="myModal" tabindex=-1>
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">Member Login</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">1</div>
+            <div class="col-md-4">2</div>
+            <div class="col-md-4">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default">Regist</button>
+        <button class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Click Open</button>
+
+<button class="btn btn-primary btn-lg" id="btn" >Click Open2</button>
+
+
+
+<script type="text/javascript">
+  $('#btn').on('click', function(){
+    $('#myModal').modal('show');
+  });
+
+$('#myModal').modal({
+  show:false,
+});
+
+$('#myModal').on('show.bs.modal', function(){
+  alert('before show method');
+});
+
+$('#myModal').on('shown.bs.modal', function(){
+  alert('After whole windows');
+});
+
+$('#myModal').on('hide.bs.modal', function(){
+  alert('before hide mothod');
+});
+
+$('#myModal').on('hidden.bs.modal', function(){
+  alert('After modal windows');
+});
+
+
+</script>
+
+</body>
+</html>

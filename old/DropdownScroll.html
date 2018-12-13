@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    .a{
+      height:50px;
+      border:1px solid #ccc;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+<div class="dropdown" id="dropdown">
+  <button class="btn btn-primary" data-toggle="dropdown">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">Home</a>
+      <a href="#">Info</a>
+      <a href="#">Product</a>
+      <a href="#">About</a>
+    </li>
+  </ul>
+</div>
+
+<nav id="nav1" class="navbar navbar-default">
+  <a href="#" class="navbar-brand">Web Developement</a>
+  <ul class="nav navbar-nav">
+    <li><a href="#html5">HTML5</a></li>
+    <li><a href="#bootstrap">Bootstrap</a></li>
+    <li><a class="dropdown" href="#" data-toggle="dropdown">javascript <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#jquery">jQurey</a></li>
+        <li><a href="#yui">Yui</a></li>
+        <li><a href="#extjs">ExtJS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<nav id="nav2" class="navbar navbar-default">
+  <a href="#" class="navbar-brand">Web Developement</a>
+  <ul class="nav navbar-nav">
+    <li><a href="#html5">HTML5</a></li>
+    <li><a href="#bootstrap">Bootstrap</a></li>
+    <li><a class="dropdown" href="#" data-toggle="dropdown">javascript <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#jquery">jQurey</a></li>
+        <li><a href="#yui">Yui</a></li>
+        <li><a href="#extjs">ExtJS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div id="content" data-offset="0" data-spy="scroll" data-target="#nav2" style="padding:0 10px; height:200px; overflow:auto; position:relative;">
+<section class="sec">
+  <h4 id=html5>HTML5 <a href="#" onclick="removeSec(this)">Remove</a></h4>
+  <p>The W3C HTML5 specification introduces numerous new tags to define semantic/structural elements,
+    text-formatting instructions, form controls, input types, and more. This page describes all of the new HTML5
+    tags along with updates to an existing tag.</p>
+</section>
+<section class="sec">
+  <h4 id="bootstrap">Bootstrap</h4>
+  <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or
+    build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components,
+    and powerful plugins built on jQuery. </p>
+</section>
+<section class="sec">
+  <h4 id="jquery">jQurey</h4>
+  <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and
+    manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude</p>
+</section>
+<section class="sec">
+  <h4 id="yui">Yui</h4>
+  <p>IMPORTANT: The YUI library is no longer actively maintained. Please see this announcement for more information. YUI is a free, open source JavaScript and</p>
+</section>
+<section class="sec">
+  <h4 id="extjs">ExtJS</h4>
+  <p>Ext JS is a JavaScript framework for building data-intensive cross-platform web apps for desktop and mobile, with the largest set of UI components.</p>
+</section>
+</div>
+
+
+
+
+<script type="text/javascript">
+  $('#dropdown').on('show.bs.dropdown', function(){
+    alert('before show method');
+  });
+
+function removeSec(e){
+$(e).parents('.sec').remove();
+$('#content').scrollspy('refresh');  //If not, menu cannot be clicked
+}
+
+
+</script>
+
+
+</body>
+</html>

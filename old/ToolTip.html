@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 3 Grid</title>
+  <!-- Bootstrap V3.37 -->
+  <link rel="stylesheet" href="code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="code/jquery-3.3.1.js"></script>
+  <script src="code/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <style>
+    a:focus{
+
+    }
+  </style>
+</head>
+<body style="margin:100px">
+
+
+<a href="#" data-toggle="tooltip" title="HyperText Markup Language">HTML5</a>
+<br />
+
+<a href="#" data-toggle="tooltip"
+            data-original-title="<b>HyperText Markup Language</b>"
+            data-animation="false"
+            data-html="true"
+            data-placement="auto top"
+            data-trigger="hover focus"
+            data-delay="100"
+>HTML5</a>
+
+<br>
+
+<a href="#" data-toggle="tooltip" title="HyperText Markup Language">HTML5</a>
+
+
+<script type="text/javascript">
+    $('a').tooltip({
+      delay:{
+        show:500,
+        hide:100,
+      }
+    });
+</script>
+
+
+</body>
+</html>
